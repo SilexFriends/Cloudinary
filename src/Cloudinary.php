@@ -94,11 +94,11 @@ final class Cloudinary implements CloudinaryInterface, ServiceProviderInterface
         
         if(count($options) > 0)
         {
-            return Uploader::upload($file, $options);
+            return Uploader::upload($url, $options);
         }
         else 
         {
-            return Uploader::upload($file);
+            return Uploader::upload($url);
         }
     }
 }
