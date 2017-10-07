@@ -25,15 +25,17 @@ interface CloudinaryInterface
      * Create from file upload
      *
      * @param UploadedFile $file
+     * @param array $options
      * @return array
      */
-    public function createFromFile(UploadedFile $file): array;
+    public function createFromFile(UploadedFile $file, array $options = []): array;
 
     /**
      * Import from url
      *
      * @param string $url
+     * @param array $options
      * @return array
      */
-    public function createFromUrl(string $url): array;
+    public function createFromUrl(string $url, array $options = []): array;
 }
